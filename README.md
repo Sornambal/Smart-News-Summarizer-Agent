@@ -126,8 +126,9 @@ Success Rate: 60.0%
 
 ## 👥 Team
 
-- **Modules 1 & 2** - Your Friend (Query Generation, Web Search)
-- **Modules 3 & 4** - You (Article Extraction, Report Generation)
+- **Modules 1 & 2** - sornambal.p
+- **Modules 3 & 4** - kiruthika.s
+- 
 
 ## ✅ Status
 
