@@ -31,25 +31,68 @@ def perform_web_search(query: str):
         return []
 
 def select_relevant_articles(search_results):
+    """
+    Use LLM to autonomously filter and select the most relevant articles.
+    
+    Args:
+        search_results: List of search results from Tavily
+        
+    Returns:
+        List of URLs of the most relevant articles
+    """
     try:
-        formatted = ""
+        # Filter out articles that are likely to be problematic
+        filtered_results = []
         for r in search_results:
+            url = r.get('url', '')
+            title = r.get('title', '')
+            
+            # Skip main category/index pages (no real content)
+            problematic_patterns = [
+                '/politics/$',  # Main politics page
+                '/topics/',     # Topic index pages
+                '/category/',   # Category pages
+                '/tag/',        # Tag pages
+                '/search',      # Search results pages
+                '/latest',      # Latest posts
+            ]
+            
+            skip = False
+            for pattern in problematic_patterns:
+                if pattern in url.lower():
+                    skip = True
+                    break
+            
+            if not skip and len(title) > 10:  # Ensure has meaningful title
+                filtered_results.append(r)
+        
+        # Use remaining results for filtering
+        if not filtered_results:
+            filtered_results = search_results
+        
+        formatted = ""
+        for r in filtered_results[:7]:  # Take top 7 for LLM filtering
             formatted += f"Title: {r.get('title')}\nURL: {r.get('url')}\nSnippet: {r.get('snippet')}\n\n"
 
         prompt = filter_prompt.format(results=formatted)
 
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}]
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+            max_tokens=200
         )
 
-        # ✅ Correct extraction
+        # Extract URLs from response
         raw_output = response.choices[0].message.content.strip()
-
-        urls = raw_output.split("\n")
-        urls = [u.strip() for u in urls if u.startswith("http")]
-
-        return urls
+        urls = []
+        
+        for line in raw_output.split("\n"):
+            line = line.strip()
+            if line.startswith("http"):
+                urls.append(line)
+        
+        return urls[:5]  # Return top 5 URLs
 
     except Exception as e:
         print("❌ Error in select_relevant_articles:", e)

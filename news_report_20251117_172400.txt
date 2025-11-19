@@ -1,0 +1,50 @@
+================================================================================
+📰 NEWS SUMMARY REPORT: POLITICS
+================================================================================
+Generated: 2025-11-17 17:24:00
+
+📋 EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Here is a brief, cohesive executive summary of the provided news summaries, focusing on the politics-related news:
+
+In recent developments, a violent attack occurred on June 1 at the Pearl Street Mall in Boulder, where a suspect hurled Molotov cocktails during a march for Israeli hostages, injuring 15 people and a dog. Authorities have taken the suspect into custody, and an investigation is forthcoming. Meanwhile, across the Atlantic, UK politician Shabana Mahmood is set to unveil reforms aimed at overhauling the country's asylum system, which she deems "out of control." The proposed changes seek to stem illegal immigration and expedite the deportation of individuals without valid claims, ultimately making the UK a less attractive destination for undocumented migrants. These developments highlight the complex and often contentious nature of political discourse, both domestically and internationally.
+
+📄 ARTICLE SUMMARIES
+--------------------------------------------------------------------------------
+
+[Article 1]
+Title: Latest politics news and headlines
+URL: https://www.cbsnews.com/newyork/politics/
+Summary:
+A suspect was taken into custody after an attack on Pearl Street Mall in Boulder on June 1, which injured 15 people and a dog. The attack occurred during a march for Israeli hostages, with the suspect throwing Molotov cocktails that caused burns to some of the victims. The incident resulted in multiple casualties, and authorities have the suspect in custody. An investigation into the attack is likely to follow.
+
+
+[Article 2]
+Title: ITV News : The Latest Politics News
+URL: https://www.itv.com/news/topic/politics
+Summary:
+Shabana Mahmood plans to introduce reforms to the UK's asylum system, which she describes as "out of control". The proposed changes aim to deter illegal immigration and facilitate the deportation of those without a valid claim. The reforms are expected to be announced on Monday, with the goal of making the UK a less appealing destination for undocumented migrants. This move is intended to tighten the current asylum system and improve its effectiveness.
+
+
+[Article 3]
+Title: Latest politics news and headlines
+URL: https://www.cbsnews.com/baltimore/politics/
+Summary:
+The Baltimore Ravens, who were once 1-5, are nearing a .500 record, but coach John Harbaugh is cautioning against complacency. Despite their improved performance, Harbaugh is emphasizing that the team cannot be satisfied with their current progress. The Ravens are still working towards making the playoffs, and Harbaugh's goal is to keep the team focused on achieving that objective. The team's turnaround is a testament to Harbaugh's leadership, but there is still work to be done.
+
+
+⚠️  FAILED TO PROCESS
+--------------------------------------------------------------------------------
+  • https://www.newsweek.com/politics
+  • https://www.outkick.com/politics
+
+📊 STATISTICS
+--------------------------------------------------------------------------------
+Total URLs Found: 5
+Successfully Processed: 3
+Failed: 2
+Success Rate: 60.0%
+
+================================================================================
+End of Report
+================================================================================
