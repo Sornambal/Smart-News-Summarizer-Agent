@@ -8,29 +8,21 @@ The agent makes **2 autonomous decisions**:
 1. What search query to use
 2. Which articles are most relevant to summarize
 
-## ✅ Evaluation Checklist
 
-- ✅ Agent successfully searches for news
-- ✅ Agent autonomously selects relevant articles (not hardcoded)
-- ✅ Agent fetches and summarizes each article  
-- ✅ Output is well-formatted and readable
-- ✅ Handles errors gracefully (no crashes)
-- ✅ Code is clean and commented
 
 ## 🏗️ 4-Module Architecture
 
 ```
 User Topic
     ↓
-[Module 1: Query Generation] ← Sornambal
+[Module 1: Query Generation] 
     ↓
-[Module 2: Web Search & Article Selection] ← Sornambal
+[Module 2: Web Search & Article Selection] 
     ↓
-[Module 3: Article Extraction & Summarization] ← Kiruthika
+[Module 3: Article Extraction & Summarization] 
     ↓
-[Module 4: Report Generation & Error Handling] ← Kiruthika
-    ↓
-[Deployment] ← Sornambal
+[Module 4: Report Generation & Error Handling] 
+
 ```
 
 ### Modules Overview
@@ -79,20 +71,9 @@ Smart-News-Summarizer-Agent/
 └── requirements.txt
 ```
 
-## 📚 Documentation
 
-- **COMPLETION_REPORT.md** - Full project completion report
-- **IMPLEMENTATION_GUIDE.md** - Technical implementation details
-- **PROJECT_INDEX.md** - Complete project overview
-- **MODULE_3_4_SUMMARY.md** - Modules 3 & 4 specific details
 
-## ✅ Testing
 
-```powershell
-python test_modules_3_4.py       # Test Modules 3 & 4
-python test_end_to_end.py        # Full integration test
-python QUICKSTART.py             # Verify setup
-```
 
 ## 📊 Sample Output
 
@@ -107,13 +88,6 @@ python QUICKSTART.py             # Verify setup
 📄 ARTICLE SUMMARIES
 [Individual 3-4 sentence summaries with URLs]
 
-⚠️ FAILED TO PROCESS
-[Transparent error reporting]
-
-📊 STATISTICS
-Total URLs Found: 5
-Successfully Processed: 3
-Success Rate: 60.0%
 ```
 
 ## 🔧 Technologies
@@ -126,8 +100,8 @@ Success Rate: 60.0%
 
 ## 👥 Team
 
-- **Modules 1 & 2** - sornambal.p
-- **Modules 3 & 4** - kiruthika.s
+- **Modules 1 & 2** - Sornambal.P
+- **Modules 3 & 4** - Kiruthika. S
 
 ## ✅ Status
 
