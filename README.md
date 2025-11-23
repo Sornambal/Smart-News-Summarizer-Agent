@@ -22,25 +22,25 @@ The agent makes **2 autonomous decisions**:
 ```
 User Topic
     ↓
-[Module 1: Query Generation] ← Friend
+[Module 1: Query Generation] ← Sornambal
     ↓
-[Module 2: Web Search & Article Selection] ← Friend
+[Module 2: Web Search & Article Selection] ← Sornambal
     ↓
-[Module 3: Article Extraction & Summarization] ← You
+[Module 3: Article Extraction & Summarization] ← Kiruthika
     ↓
-[Module 4: Report Generation & Error Handling] ← You
+[Module 4: Report Generation & Error Handling] ← Kiruthika
     ↓
-Professional Report (Localhost Web UI)
+[Deployment] ← Sornambal
 ```
 
 ### Modules Overview
 
 | Module | Owner | File | What It Does |
 |--------|-------|------|--------------|
-| **1** | Friend | `modules/query_generator.py` | Generates optimized search queries |
-| **2** | Friend | `modules/web_search.py` | Searches API & filters relevant articles |
-| **3** | You | `modules/summarizer.py` | Fetches & summarizes articles |
-| **4** | You | `modules/report_generator.py` | Creates professional reports |
+| **1** | Sornambal | `modules/query_generator.py` | Generates optimized search queries |
+| **2** | Sornambal | `modules/web_search.py` | Searches API & filters relevant articles |
+| **3** | Kiruthika | `modules/summarizer.py` | Fetches & summarizes articles |
+| **4** | Kiruthika | `modules/report_generator.py` | Creates professional reports |
 
 ## 🚀 Quick Start
 
@@ -56,9 +56,9 @@ GROQ_API_KEY=your_key_here
 TAVILY_API_KEY=your_key_here
 ```
 
-### 3. Run on Localhost
+### 3. Run the Flask API Server (Web UI)
 ```bash
-python flask_api.py
+python main.py
 ```
 
 Open: **http://localhost:5000**
@@ -73,9 +73,9 @@ Smart-News-Summarizer-Agent/
 │   ├── summarizer.py           # Module 3
 │   └── report_generator.py     # Module 4
 ├── app/
-│   └── app.py                  # Orchestration
-├── flask_api.py                # Web UI ← Run this!
-├── .env                        # API Keys
+│   └── app.py                  # Orchestrator with run_news_summarizer_agent function
+├── main.py                    # Flask API Server (Web UI)
+├── .env                      # API Keys
 └── requirements.txt
 ```
 
@@ -128,7 +128,6 @@ Success Rate: 60.0%
 
 - **Modules 1 & 2** - sornambal.p
 - **Modules 3 & 4** - kiruthika.s
-- 
 
 ## ✅ Status
 
@@ -136,4 +135,4 @@ Success Rate: 60.0%
 
 ---
 
-**Start summarizing news now:** `python interactive_mode.py`
+**Start summarizing news now:** Run the Flask API server using `python main.py` and open **http://localhost:5000** in your browser.
