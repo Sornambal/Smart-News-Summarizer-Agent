@@ -4,4 +4,3 @@ tavily-python
 requests
 python-dotenv
 newspaper3k
-streamlit
