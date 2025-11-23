@@ -1,5 +1,12 @@
 # 📰 Smart News Summarizer Agent
 
+
+
+🔗 Live Demo
+
+https://huggingface.co/spaces/Sornambal/Smart_News_Summarizer_Agent
+
+
 **Build an agent that automatically finds recent news on a topic and creates a brief summary.**
 
 ## 🎯 Goal
@@ -109,4 +116,4 @@ Smart-News-Summarizer-Agent/
 
 ---
 
-**Start summarizing news now:** Run the Flask API server using `python main.py` and open **http://localhost:5000** in your browser.
+
