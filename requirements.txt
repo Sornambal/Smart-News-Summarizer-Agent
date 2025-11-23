@@ -1,6 +1,15 @@
-langchain
+Flask
+waitress
+
+langchain-core
 groq
 tavily-python
+
 requests
 python-dotenv
+
 newspaper3k
+beautifulsoup4
+lxml
+cssselect
+
