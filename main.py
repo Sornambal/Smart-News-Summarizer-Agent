@@ -408,4 +408,4 @@ if __name__ == '__main__':
     print("[WEB] UI: http://localhost:5000")
     print("[DOCS] API Documentation: http://localhost:5000/api/info")
     print("="*80 + "\n")
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=7860)
