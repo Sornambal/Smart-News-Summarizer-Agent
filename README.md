@@ -32,14 +32,7 @@ User Topic
 
 ```
 
-### Modules Overview
 
-| Module | Owner | File | What It Does |
-|--------|-------|------|--------------|
-| **1** | Sornambal | `modules/query_generator.py` | Generates optimized search queries |
-| **2** | Sornambal | `modules/web_search.py` | Searches API & filters relevant articles |
-| **3** | Kiruthika | `modules/summarizer.py` | Fetches & summarizes articles |
-| **4** | Kiruthika | `modules/report_generator.py` | Creates professional reports |
 
 ## 🚀 Quick Start
 
@@ -105,10 +98,7 @@ Smart-News-Summarizer-Agent/
 - **LangChain** - LLM framework and prompts
 - **Python 3.11** - Runtime environment
 
-## 👥 Team
 
-- **Modules 1 & 2** - Sornambal.P
-- **Modules 3 & 4** - Kiruthika. S
 
 ## ✅ Status
 
